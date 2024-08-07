@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    background-image: url(sky2.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background: rgb(58, 56, 56);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid aliceblue;
+    font: small-caps bold 24px/1 sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.search {
+    margin-bottom: 20px;
+    font: small-caps bold 24px/1 sans-serif;
+}
+
+#city {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    background: #d2b38b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+#searchBtn:hover {
+    background: #0056b3;
+}
+
+.weather {
+    background: rgba(55, 52, 52, 0.8); /* Semi-transparent background */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    position: relative; /* Position relative to allow absolute positioning of the image */
+    margin-top: 100px; /* Space between container and weather */
+    display: none; /* Hide weather section initially */
+    animation: slideIn 1s ease-in-out;
+}
+
+#cityName {
+    padding-left: 30px;
+    text-align: left ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.temperature {
+    font-size: 50px; /* Example: Larger font size */
+    color: #f9bc76; /* Example: Yellow color */
+    font-weight: bold; /* Example: Bold text */
+    text-align: right ;
+    padding-top: 1px;
+    padding-right: 30px;
+}
+
+#description {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 70px ;
+    padding-right: 30px;
+}
+
+#humidity {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 70px ;
+    padding-right: 30px;
+}
+
+#wind {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 70px ;
+    padding-right: 30px;
+}
+
+.time {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; /* Adjust size as needed */
+    color: #ffffff; /* Adjust color as needed */
+    margin-bottom: 10px; /* Space between time and weather info */
+    padding-left: 30px;
+}
+
+.weather img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+}
+
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
